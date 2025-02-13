@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/Java_Domination.iml" filepath="$PROJECT_DIR$/Java_Domination.iml" />
+      <module fileurl="file://$PROJECT_DIR$/src/Java_Domination.iml" filepath="$PROJECT_DIR$/src/Java_Domination.iml" />
     </modules>
   </component>
 </project>

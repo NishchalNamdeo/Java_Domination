@@ -47,7 +47,7 @@ public class Java_loops {
 //         }
 //         System.out.println("Factorial of " + n + " is " + fact);
 
-//  qus7. Check if a number is prime using a for loop.
+//  qus7. Check if a number is prime using a for loop.(not solve)
 //        int count = 0; // Count of prime numbers found
 //        System.out.println("First 10 prime numbers:");
 //        for (int num = 2; count < 10; num++) { // Start from 2, keep going until 10 primes are found
@@ -58,7 +58,7 @@ public class Java_loops {
 //        }
 //    }
 
-    // Function to check if a number is prime
+        // Function to check if a number is prime
 //        public static boolean isPrime(int num) {
 //        if (num < 2) return false; // Numbers less than 2 are not prime
 //        for (int i = 2; i * i <= num; i++) { // Check divisibility only up to sqrt(num)
@@ -87,8 +87,46 @@ public class Java_loops {
 //        }
 
 //        qus11. Count the number of digits in a number.
+//        int num = 12345, count = 0;
+//        for (; num > 0; num /= 10) {
+//            count++;
+//        }
+//        System.out.println(count);
 
 
+//        While Loop Question
+
+//        qus1. Print numbers from 1 to 10 using a while loop.
+//        int i = 1;
+//        while (i <= 10) {
+//            System.out.println(i);
+//            i++;
+//        }
+
+//        qus2. Find the sum of digits of a number.
+//        int n = 55, sum = 0;
+//        while(n>0){
+//            sum += n % 10;
+//            n /= 10;
+//        }
+//        System.out.println(sum);
+
+//       qus3.  Reverse a number using a while loop.
+//       int n = 123456, rev = 0;
+//       while(n>0){
+//           rev = rev * 10 + n % 10;
+//           n /= 10;
+//       }
+//        System.out.println(rev);
+
+//      qus4. Find the GCD of two numbers.  (sbse bada commman factor)
+//         int a = 30, b=50;
+//         while(b != 0){
+//             int temp = b;
+//             b = a% b;
+//             a = temp;
+//         }
+//        System.out.println(a);
 
 
 

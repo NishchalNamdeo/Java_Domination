@@ -129,6 +129,11 @@ public class Java_loops {
 //        System.out.println(a);
 
 
+        int x = 1;
+        while(x){
+            System.out.println(x);
+            x++;
+        };
 
 
 

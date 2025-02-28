@@ -129,7 +129,14 @@ public class Java_loops {
 //        System.out.println(a);
 
 
-
+//      qus4. Find the GCD of two numbers.(sbse bada commman factor)
+//         int a = 30, b=50;
+//         while(b != 0){
+//             int temp = b;
+//             b = a% b;
+//             a = temp;
+//         }
+//        System.out.println(a);
 
 
 

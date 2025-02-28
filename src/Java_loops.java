@@ -130,7 +130,6 @@ public class Java_loops {
 
 
 
-//change the number of the loop
 
 
 

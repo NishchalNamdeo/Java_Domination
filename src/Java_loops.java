@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class Java_loops {
     public static void main(String[] args) {
 
@@ -129,15 +131,58 @@ public class Java_loops {
 //        System.out.println(a);
 
 
-//      qus4. Find the GCD of two numbers.(sbse bada commman factor)
-//         int a = 30, b=50;
-//         while(b != 0){
-//             int temp = b;
-//             b = a% b;
-//             a = temp;
-//         }
+//      qus5. check strong number
+//        int num = sc.nextInt();
+//
+//        int sum = 0;
+//        int temp = num;
+//
+//        while (temp != 0) {
+//            int lastDigit = temp % 10; // Extract last digit
+//            int fact = 1;
+//
+//            // Calculate factorial of the digit
+//            for (int i = 1; i <= lastDigit; i++) {
+//                fact *= i;
+//            }
+//
+//            sum += fact; // Add factorial to sum
+//            temp /= 10;  // Remove last digit
+//        }
+//
+//        // Check if sum of factorials is equal to the original number
+//        if (sum == num) {
+//            System.out.println("Yes");
+//        } else {
+//            System.out.println("No");
+//        }
+
+
+//     qus6 check HCF means (12, 15 = 3)
+//        int a = sc.nextInt();
+//        int b = sc.nextInt();
+
+//        while (a != b) {
+//            if (a > b) a -= b;
+//            else b -= a;
+//        }
 //        System.out.println(a);
 
+//        qus 7 check number is perfect square
+        // Input integer
+//        int num = sc.nextInt();
+//        boolean isPerfectSquare = false;
+//        int i = 1;
+//        while (i * i <= num) {
+//            if (i * i == num) {// If square of i equals num, it's a perfect square
+//                isPerfectSquare = true;
+//                break;
+//            }
+//            i++;
+//        }
+//        // Check if the number is a perfect square
+//        if (isPerfectSquare) System.out.println("Yes");
+//        else System.out.println("No");
 
 
 

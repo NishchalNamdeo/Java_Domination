@@ -131,7 +131,7 @@ public class Java_loops {
 //        System.out.println(a);
 
 
-//      qus5. check strong number
+//      qus5. check strong number ( factorial nikal ke)
 //        int num = sc.nextInt();
 //
 //        int sum = 0;
@@ -185,7 +185,95 @@ public class Java_loops {
 //        else System.out.println("No");
 
 
+//     qus8  Abundant Number ( Sum = 1 + 2 + 3 + 4 + 6 = 16 (> 12) ✅ Abundant )
+//        int n = sc.nextInt();
+//        int sum = 0;
+//        int i = 1;
+//
+//        while (i <= n/2){
+//            if(num % i == 0){
+//                sum += i;
+//            }
+//            i++;
+//        }
+//        if (sum > num) {
+//            System.out.println("Yes");
+//        } else {
+//            System.out.println("No");
+//        }
 
+//        qus 9 Check if a Number is a Neon Number ( 9 ^ 2 = 81, 8+1 = 9 if we got that will we neon number)
+//        int n = sc.nextInt();
+//        int sq = n * n;
+//        int sum = 0;
+//
+//        while(sq > 0){
+//            int digit = sq % 10;
+//            sum += digit;
+//            sq /= 10;
+//        }
+//
+//        if(sum == n){
+//            System.out.print("Yes");
+//        }else{
+//            System.out.print("No");
+//        }
+
+
+//        qus 10  Validate ISBN Number ( if digit is 10 then isbn number if digit is < 10 then not isbn)
+//        long n = sc.nextLong();
+//        long origNumber = n;
+//        long c=0;
+//
+//        while (n!=0){
+//            c++;
+//            n /= 10;
+//        }
+//        if (c!=10) System.out.println(false);
+//        else{
+//            long sum =0;
+//            while (origNumber>0){
+//                sum += (origNumber%10) * c--;
+//                origNumber/=10;
+//            }
+//            if (sum%11==0) System.out.println(true);
+//            else System.out.println(false);
+//        }
+
+
+//        qus 11. Write a Java program that calculates the area of a circle, rectangle, or triangle based on user input using a switch statement. The program should ask the user to choose the shape and provide the required inputs accordingly.
+        Scanner sc = new Scanner(System.in);
+        int choice;
+        do {
+            System.out.println( "enter your choice");
+            choice = sc.nextInt();
+
+            switch (choice){
+                case 1 -> {
+                    System.out.println("radius");
+                    double r = sc.nextDouble();
+                    System.out.println("area " + (Math.PI * r * r));
+                }
+                case 2 -> {
+                    System.out.println("Length :");
+                    double l = sc.nextDouble();
+                    System.out.println("Width :");
+                    double w = sc.nextDouble();
+                    System.out.println("area " + (l * w));
+                }
+                case 3 -> {
+                    System.out.println("Base:");
+                    double b = sc.nextDouble();
+                    System.out.println("Height :");
+                    double h = sc.nextDouble();
+                    System.out.println("Area: " + (0.5 * b * h));
+                }
+                case 4 -> System.out.println("Exiting...");
+                default -> System.out.println("Invalid choice!");
+
+            }
+            System.out.println();
+        }while (choice != 4);
 
 
     };

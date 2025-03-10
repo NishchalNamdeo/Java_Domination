@@ -242,38 +242,106 @@ public class Java_loops {
 
 
 //        qus 11. Write a Java program that calculates the area of a circle, rectangle, or triangle based on user input using a switch statement. The program should ask the user to choose the shape and provide the required inputs accordingly.
-        Scanner sc = new Scanner(System.in);
-        int choice;
-        do {
-            System.out.println( "enter your choice");
-            choice = sc.nextInt();
+//        Scanner sc = new Scanner(System.in);
+//        int choice;
+//        do {
+//            System.out.println( "enter your choice");
+//            choice = sc.nextInt();
+//
+//            switch (choice){
+//                case 1 -> {
+//                    System.out.println("radius");
+//                    double r = sc.nextDouble();
+//                    System.out.println("area " + (Math.PI * r * r));
+//                }
+//                case 2 -> {
+//                    System.out.println("Length :");
+//                    double l = sc.nextDouble();
+//                    System.out.println("Width :");
+//                    double w = sc.nextDouble();
+//                    System.out.println("area " + (l * w));
+//                }
+//                case 3 -> {
+//                    System.out.println("Base:");
+//                    double b = sc.nextDouble();
+//                    System.out.println("Height :");
+//                    double h = sc.nextDouble();
+//                    System.out.println("Area: " + (0.5 * b * h));
+//                }
+//                case 4 -> System.out.println("Exiting...");
+//                default -> System.out.println("Invalid choice!");
+//
+//            }
+//            System.out.println();
+//        }while (choice != 4);
 
-            switch (choice){
-                case 1 -> {
-                    System.out.println("radius");
-                    double r = sc.nextDouble();
-                    System.out.println("area " + (Math.PI * r * r));
-                }
-                case 2 -> {
-                    System.out.println("Length :");
-                    double l = sc.nextDouble();
-                    System.out.println("Width :");
-                    double w = sc.nextDouble();
-                    System.out.println("area " + (l * w));
-                }
-                case 3 -> {
-                    System.out.println("Base:");
-                    double b = sc.nextDouble();
-                    System.out.println("Height :");
-                    double h = sc.nextDouble();
-                    System.out.println("Area: " + (0.5 * b * h));
-                }
-                case 4 -> System.out.println("Exiting...");
-                default -> System.out.println("Invalid choice!");
 
-            }
-            System.out.println();
-        }while (choice != 4);
+//        qus 12 day question
+//                Scanner sc = new Scanner(System.in);
+//                int dayNumber;
+//                do {
+//
+//                    dayNumber = sc.nextInt();
+//
+//                    switch (dayNumber) {
+//                        case 1:
+//                            System.out.println("Monday");
+//                            break;
+//                        case 2:
+//                            System.out.println("Tuesday");
+//                            break;
+//                        case 3:
+//                            System.out.println("Wednesday");
+//                            break;
+//                        case 4:
+//                            System.out.println("Thursday");
+//                            break;
+//                        case 5:
+//                            System.out.println("Friday");
+//                            break;
+//                        case 6:
+//                            System.out.println("Saturday");
+//                            break;
+//                        case 7:
+//                            System.out.println("Sunday");
+//                            break;
+//                        case 0:
+//                            System.out.println("Exiting program...");
+//                            break;
+//                        default:
+//                            System.out.println("Invalid day");
+//                    }
+//                } while (dayNumber != 0);
+
+//qus 13   check vowel and consonant
+//        Scanner sc = new Scanner(System.in);
+//
+//        // Read a single character input from the user
+//        char ch = sc.next().charAt(0);
+//
+//        // Convert the character to lowercase to handle both uppercase and lowercase inputs
+//        ch = Character.toLowerCase(ch);
+//
+//        // Initialize a variable to hold the result
+//        String result;
+//
+//        // Use a switch statement to determine if the character is a vowel or consonant
+//        switch (ch) {
+//            case 'a':
+//            case 'e':
+//            case 'i':
+//            case 'o':
+//            case 'u':
+//                result = "Vowel";  // Case for vowels
+//                break;
+//            default:
+//                result = Character.isLetter(ch) ? "Consonant" : "Not a letter";
+//                break;
+//        }
+//
+//        // Print the result
+//        System.out.println(result);
+
 
 
     };

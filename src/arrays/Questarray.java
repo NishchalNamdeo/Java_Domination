@@ -1,9 +1,10 @@
 package arrays;
 
-import java.util.Scanner;
+import java.util.Arrays;
+//import java.util.Scanner;
 
 
-public class Arrays {
+public class Questarray {
     public static void main(String[] args) {
 //        Scanner sc = new Scanner(System.in);
 
@@ -62,6 +63,62 @@ public class Arrays {
         //        System.out.println(isSorted);
 
 
+//  Array deep copy
+//        int arr[]  = {1,2,3,4};
+//        int  copy[] = new int[arr.length];
+//        for (int i = 0; i < arr.length; i++) {
+//            copy[i] = arr[i];
+//        }
+//        copy[0] = 1000;
+//        System.out.println(Arrays.toString(copy));
+
+
+//   left rotate array
+//        int[] arr = {1, 2, 3, 4, 5};
+//        int temp = arr[0];
+//        int n = arr.length;
+//        for (int i = 0; i < n - 1; i++) {
+//            arr[i] = arr[i + 1];
+//        }
+//        arr[n - 1] = temp;
+//        System.out.println(Arrays.toString(arr));
+
+
+//  left rotate array by k
+//        int[] arr = {1, 2, 3, 4, 5};
+//        int n = arr.length;   (k = k % n = Limition lag jayga usse jada ni chalega);
+//        int k = 3;
+//        while( k-- > 0){
+//            int temp = arr[0];
+//            for (int i = 0; i < n - 1; i++) {
+//                arr[i] = arr[i + 1];
+//            }
+//            arr[n - 1] = temp;
+//        }
+//        System.out.println(Arrays.toString(arr));
+
+
+//reverse array in java
+//        int [] arr = {1, 2, 3, 4, 5};
+//        int n = arr.length;
+//        int[] temp = new int[n];
+//        for (int i = n-1; i >=0 ;) {
+//            temp[n-i-1] = arr[i--];
+//        }
+//        System.out.println(Arrays.toString(temp));
+
+        int[] arr = {1, 2, 3, 4, 5};
+        int n = arr.length;
+        int i = 0, j = n - 1;
+        while (i < j) {
+            int temp = arr[i];
+            arr[i] = arr[j];
+            arr[j] = temp;
+            i++;
+            j--;
+        }
+        System.out.println(Arrays.toString(arr));
+        
 
 
 

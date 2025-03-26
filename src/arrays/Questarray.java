@@ -186,3 +186,65 @@ import java.util.Arrays;
 //        System.out.println(Arrays.toString(arr));
 //    }
 //}
+
+
+//selection sort
+//public class Questarray {
+//    public static void main(String[] args) {
+//        int arr[] = {22, 44, 1, 23, 12, 39};
+//        int n = arr.length;
+//        for (int i = 0; i < n-1; i++) {
+//            int smallest = i;
+//            for (int j = i+1; j <arr.length ; j++) {
+//                if(arr[j] < arr[smallest]){
+//                    smallest = j;
+//                }
+//            }
+//            if( i != smallest){
+//                int temp = arr[i];
+//                arr[i] = arr[smallest];
+//                arr[smallest] = temp;
+//            }
+//        }
+//        System.out.println(Arrays.toString(arr));
+//    }
+//}
+
+
+//intsertion sort
+//public class Questarray {
+//    public static void main(String[] args) {
+//        int arr[] = {22, 44, 1, 23, 12, 39};
+//        int n = arr.length;
+//        for (int i = 1; i < n; i++) {
+//            int j = i-1;
+//            int key = arr[i];
+//            while(j>=0 && arr[j]>key){
+//                arr[j+1] = arr[j--];
+//                arr[j+1] = key;
+//            }
+//        }
+//        System.out.println(Arrays.toString(arr));
+//    }
+//}
+
+
+//subarray question
+public class Questarray {
+    public static void main(String[] args) {
+        int arr[] = {-1, 1, -1, 1, -1};
+        int target = 0;
+        int ans = 0;
+        for (int i = 0; i < arr.length ; i++) {
+            int sum = 0;
+            for (int j = i; j <arr.length ; j++) {
+                sum += arr[j];
+                if (sum == target){
+                    ans++;
+                }
+            }
+
+        }
+        System.out.println(ans);
+    }
+}

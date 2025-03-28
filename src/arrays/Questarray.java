@@ -230,21 +230,36 @@ import java.util.Arrays;
 
 
 //subarray question
-public class Questarray {
-    public static void main(String[] args) {
-        int arr[] = {-1, 1, -1, 1, -1};
-        int target = 0;
-        int ans = 0;
-        for (int i = 0; i < arr.length ; i++) {
-            int sum = 0;
-            for (int j = i; j <arr.length ; j++) {
-                sum += arr[j];
-                if (sum == target){
-                    ans++;
-                }
-            }
+//public class Questarray {
+//    public static void main(String[] args) {
+//        int arr[] = {-1, 1, -1, 1, -1};
+//        int target = 0;
+//        int ans = 0;
+//        for (int i = 0; i < arr.length ; i++) {
+//            int sum = 0;
+//            for (int j = i; j <arr.length ; j++) {
+//                sum += arr[j];
+//                if (sum == target){
+//                    ans++;
+//                }
+//            }
+//
+//        }
+//        System.out.println(ans);
+//    }
+//}
 
-        }
-        System.out.println(ans);
-    }
-}
+
+
+//Linear search arrays
+//class Solution {
+//    public static int linearSearch(int arr[], int n, int m) {
+//        for (int i = 0; i < n; i++) {
+//            if (arr[i] == m) {
+//                return i;
+//            }
+//        }
+//
+//        return -1;
+//    }
+//}

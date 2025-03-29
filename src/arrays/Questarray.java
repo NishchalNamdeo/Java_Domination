@@ -1,6 +1,7 @@
 package arrays;
 
 import java.util.Arrays;
+import java.util.Scanner;
 //import java.util.Scanner;
 
 
@@ -98,7 +99,7 @@ import java.util.Arrays;
 //        System.out.println(Arrays.toString(arr));
 
 
-//reverse array in java
+//  reverse array in java
 //        int [] arr = {1, 2, 3, 4, 5};
 //        int n = arr.length;
 //        int[] temp = new int[n];
@@ -125,7 +126,6 @@ import java.util.Arrays;
 
 
 //liner search Question;
-
 //public class Questarray {
 //    public static int linearsearch(int arr[], int key){
 //        for (int i = 0; i <arr.length ; i++) {
@@ -263,3 +263,99 @@ import java.util.Arrays;
 //        return -1;
 //    }
 //}
+
+
+//binary seacrh in array
+//class Solution{
+//    public int search(int arr[], int n, int m){
+//        int s=0, e=n-1;
+//        while(s <= e){
+//            int mid = s+(e-s)/2;
+//
+//            if(arr[mid] == m){
+//                return mid;
+//            }else if(arr[mid] < m){
+//                s = mid+1;
+//            }else{
+//                e = mid-1;
+//            }
+//        }
+//
+//        return -1;
+//    }
+//}
+
+
+//move to zero in last index
+//public class Questarray {
+//    public static void moveZerosToEnd(int arr[], int n) {
+//       int j = 0;
+//        for (int i = 0; i < n ; i++) {
+//            if (arr[i] != 0){
+//                int temp = arr[i];
+//                arr[i] = arr[j];
+//                arr[j] = temp;
+//                j++;
+//            }
+//        }
+//    }
+//    public static void main(String[] args) {
+//        Scanner sc = new Scanner(System.in);
+//
+//        int n = sc.nextInt();
+//        int arr[] = new int[n];
+//
+//        for (int i = 0; i < n; i++) {
+//            arr[i] = sc.nextInt();
+//        }
+//
+//        moveZerosToEnd(arr, n);
+//
+//        for (int num : arr){
+//            System.out.print(num + "");
+//        }
+//    }
+//}
+
+
+//Bubble sort only by Method
+//class Solution{
+//    public void bubbleSort(int arr[], int n) {
+//        for (int i = 0; i < n - 1; i++) {
+//            for (int j = 0; j < n - i - 1; j++) {
+//                if (arr[j] > arr[j + 1]) {
+//                    int temp = arr[j];
+//                    arr[j] = arr[j + 1];
+//                    arr[j + 1] = temp;
+//                }
+//            }
+//        }
+//    }
+//
+//}
+
+
+//Concatenate arrays
+//class Solution {
+//    public int[] getConcatenate(int[] arr, int n) {
+//        int[] ans = new int[2 * n];
+//
+//        for (int i = 0; i < n; i++) {
+//            ans[i] = arr[i];
+//            ans[i + n] = arr[i];
+//        }
+//        return ans;
+//    }
+//}
+
+//build arryas
+//class Solution {
+//    public int[] buildArray(int[] nums, int n) {
+//        int [] ans = new int[n];
+//        for (int i = 0; i <n ; i++) {
+//            ans[i] = nums[nums[i]];
+//        }
+//        return ans;
+//    }
+//}
+

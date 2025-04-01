@@ -359,3 +359,98 @@ import java.util.Scanner;
 //    }
 //}
 
+//absolut
+//class Solution {
+//    public int absoluteDifference(int[] arr, int n) {
+//        int totalSum = 0;
+//        for (int i = 0; i < n; i++) {
+//            for (int j = i + 1; j < n; j++) {
+//                totalSum += Math.abs(arr[i] - arr[j]);
+//            }
+//        }
+//        return totalSum;
+//    }
+//}
+
+
+
+
+//multi D and jagged arryas
+
+/* qus ->  2d arrays question by index print
+    public class Questarray {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int arr[][] = new int [3][31];
+        for (int i = 0; i <arr.length; i++) {
+            for (int j = 0; j <arr.length ; j++) {
+                arr[i][j] = sc.nextInt();
+            }
+        }
+        for (int i = 0; i <arr.length ; i++) {
+            System.out.println(Arrays.toString(arr[i]));
+        }
+    }}
+ */
+
+
+/*  qus ->sum of digonal
+public class Questarray {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int left = 0, right = 0;
+        for (int i = 0; i < arr.length; i++) {
+            for (int j = 0; j < arr[i].length; j++) {
+                if (i == j) left += arr[i][j];
+                if (i + j == arr.length - 1) right += arr[i][j];
+            }
+        }
+        System.out.println(left + right);
+    }
+}
+*/
+
+//zix - zax / jagged arrays ----------
+/* public class Questarray {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int arr[][] = {{1,2},{4},{7,8,9,10, 11}};
+        int left = 0, right = 0;
+        for (int i = 0; i < arr.length; i++) {
+            for (int j = 0; j < arr[i].length; j++) {
+                System.out.print(arr[i][j] + "");
+            }
+            System.out.println();
+        }
+    }
+}
+*/
+
+
+/* what are the contents of arr after the following code has been exceuted
+ public class Questarray {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int arr[][] = {{3,2,1}, {1,2,3}};
+        int value = 0;
+        for (int row = 1; row <arr.length ; row++) {
+            for (int col = 1; col <arr[0].length ; col++) {
+                if(arr[row][col] % 2 == 1){
+                    arr[row][col] = arr[row][col] + 1;
+                }
+                else if( arr[row][col] % 2 == 0){
+                    arr[row][col] = arr[row][col] * 2;
+                }
+            }
+
+        }
+        for (int row = 0; row < arr.length; row++) {
+            for (int col= 0; col < arr[row].length; col++) {
+                System.out.print(arr[row][col] + " ");
+            }
+            System.out.println();
+        }
+    }
+}
+*/
+

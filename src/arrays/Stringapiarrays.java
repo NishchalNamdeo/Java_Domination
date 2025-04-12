@@ -1,4 +1,5 @@
 package arrays;
+import java.util.Arrays;
 
 
 //seprate array
@@ -77,15 +78,87 @@ package arrays;
 
 
 //count the valid word - prefix
-public class Stringapiarrays {
-    public static void main(String[] args) {
-        String[] words = {"attention", "attempt", "attire", "kuch", "kyaa", "kyuu"};
-        String pref= "at";
-        int c = 0;
-        for (String word : words) {
-            if (word.startsWith(pref))
-                c++;
-        }
-        System.out.println(c);
-    }
-}
+//public class Stringapiarrays {
+//    public static void main(String[] args) {
+//        String[] words = {"attention", "attempt", "attire", "kuch", "kyaa", "kyuu"};
+//        String pref= "at";
+//        int c = 0;
+//        for (String word : words) {
+//            if (word.startsWith(pref))
+//                c++;
+//        }
+//        System.out.println(c);
+//    }
+//}
+
+
+
+//spilt method
+//public class Stringapiarrays {
+//    public static void main(String[] args) {
+//       String s = "hello Bhai kaise ho";
+//       String words[] = s.split(" ");
+//        for (String word: words) {
+//            System.out.println(word);
+//        }
+//    }
+//}
+
+
+//count freqncey
+//public class Stringapiarrays {
+//    public static void main(String[] args) {
+//        String s = "bdbsmsjnsssnsnnss";
+//        int freq[] = new int[26];
+//        for (char ch : s.toCharArray())
+//            freq[ch - 97]++;
+//        for (int i = 0; i < 26; i++) {
+//            if (freq[i] > 0)
+//                System.out.println((char) (i + 97) + " -> " + freq[i]);
+//        }
+//    }
+//}
+
+
+//check anagrams
+//public class Stringapiarrays {
+//    public static boolean validAnagram(String s, String s2) {
+//        int freq[] = new int[26];
+//        for (char ch : s.toCharArray())
+//            freq[ch - 97]++;
+//        int freq2[] = new int[26];
+//        for (char ch : s2.toCharArray())
+//            freq2[ch - 97]++;
+//
+//        for (int i = 0; i < 26; i++) {
+//            if (freq[i] != freq2[i]) {
+//                return false;
+//            }
+//        }
+//        return true;
+//
+//    }
+//
+//    public static void main(String[] args) {
+//        String s = "hellokaiseho", s2 = "kaisehohello";
+//        System.out.println(validAnagram(s, s2));
+//    }
+//}
+
+
+
+//sort array
+//public class Stringapiarrays {
+//    public static void main(String[] args) {
+//    String s = "ek machli pani me gayi chapaka";
+//    String words[] = s.split(" ");
+//        Arrays.sort(words);
+//        s ="";
+//        for(String word: words){
+//            s += word + " ";
+//        }
+//        s = s.trim();
+//        System.out.println(s);
+//
+//    }
+//}

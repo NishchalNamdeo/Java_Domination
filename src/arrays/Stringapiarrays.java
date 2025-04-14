@@ -75,6 +75,26 @@ import java.util.Arrays;
 //    }
 //}
 
+//Toggle by Method
+//class Solution {
+//    public String toggleAlphabet(String s){
+//        String ans = "";
+//
+//        for (char ch : s.toCharArray()) {
+//            if (ch >= 'a' && ch <= 'z') {
+//                ans += (char) (ch - 32);
+//            }
+//            else if (ch >= 'A' && ch <= 'Z') {
+//                ans += (char) (ch + 32);
+//            }
+//            else {
+//                ans += ch;
+//            }
+//        }
+//        return ans;
+//    }
+//}
+
 
 
 //count the valid word - prefix
@@ -103,6 +123,24 @@ import java.util.Arrays;
 //        }
 //    }
 //}
+
+//spilt method other wayt ->
+//class Solution {
+//    public void prefixCount(String words) {
+//        String arr[] = words.split(" ");
+//        for(int i = 0; i < arr.length; i++) {
+//            String ans = "";
+//            String word = arr[i];
+//            if (word.length() == 1) {
+//                ans += Character.toUpperCase(word.charAt(0));
+//            } else {
+//                ans += Character.toUpperCase(word.charAt(0)) + word.substring(1, word.length());
+//            }
+//            System.out.println(ans);
+//        }
+//    }
+//}
+
 
 
 //count freqncey
@@ -160,5 +198,44 @@ import java.util.Arrays;
 //        s = s.trim();
 //        System.out.println(s);
 //
+//    }
+//}
+
+
+
+//Capitalize First and Last Character of Each Word
+//class Solution {
+//    public String prefixCount(String words) {
+//        String arr[] = words.split(" ");
+//        String ans = "";
+//
+//        for (String word : arr) {
+//            String temp = "";
+//
+//            if (word.length() == 1) {
+//                temp += Character.toUpperCase(word.charAt(0));
+//            }
+//            else {
+//                temp += Character.toUpperCase(word.charAt(0)) +
+//                        word.substring(1, word.length() - 1) +
+//                        Character.toUpperCase(word.charAt(word.length() - 1));
+//            }
+//
+//            ans += temp + " ";
+//        }
+//        return ans.trim();
+//    }
+//}
+
+
+//maximum number of word found
+//class Solution {
+//    public int mostWordsFound(String[] sentences) {
+//        int maxWords = 0;
+//        for (String sentence : sentences) {
+//            String[] words = sentence.split(" ");
+//            maxWords = Math.max(maxWords, words.length);
+//        }
+//        return maxWords;
 //    }
 //}

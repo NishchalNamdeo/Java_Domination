@@ -240,3 +240,51 @@ import java.util.Arrays;
 //    }
 //}
 
+
+//character of frequcency of Sting
+//class Solution {
+//    public void caculateFreq(String s) {
+//        int freq[] = new int[26];
+//
+//        for (int i = 0; i < s.length(); i++) {
+//            char ch = s.charAt(i);
+//            if (ch != ' '){
+//                freq[ch - 'a']++;
+//            }
+//        }
+//
+//        for (int i = 0; i < 26; i++) {
+//            if (freq[i] != 0){
+//                System.out.println((char)(i+'a') + ": " + freq[i]);
+//            }
+//        }
+//    }
+//}
+
+
+
+//check to string are anagrams
+//class Solution {
+//    public boolean areAnagrams(String s1, String s2) {
+//        int freq[] = new int[26];
+//
+//        for (char ch : s1.toCharArray()) {
+//            freq[ch + 97]++;
+//        }
+//
+//        for (char ch : s2.toCharArray()) {
+//            freq[ch - 97]--;
+//        }
+//
+//        for (int i = 0; i < freq.length; i++) {
+//            if (freq[i] != 0) {
+//                return false;
+//            }
+//        }
+//        return true;
+//
+//    }
+//}
+
+
+

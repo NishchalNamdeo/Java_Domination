@@ -61,7 +61,7 @@ import java.util.Scanner;
 //            }
 //        }
 //        System.out.println(isSorted);
-        //        System.out.println(isSorted);
+//        System.out.println(isSorted);
 
 
 //  Array deep copy
@@ -87,8 +87,9 @@ import java.util.Scanner;
 
 //  left rotate array by k
 //        int[] arr = {1, 2, 3, 4, 5};
-//        int n = arr.length;   (k = k % n = Limition lag jayga usse jada ni chalega);
+//        int n = arr.length;
 //        int k = 3;
+//        k = k % n;    (Limition lag jayga usse jada ni chalega)
 //        while( k-- > 0){
 //            int temp = arr[0];
 //            for (int i = 0; i < n - 1; i++) {
@@ -146,7 +147,7 @@ import java.util.Scanner;
 //    }
 //}
 
-
+//binary search
 //public class Questarray {
 //    public static int binearsearch(int arr[], int key) {
 //        int start = 0, end = arr.length - 1;
@@ -453,4 +454,6 @@ public class Questarray {
     }
 }
 */
+
+//completed the question of arraystring
 

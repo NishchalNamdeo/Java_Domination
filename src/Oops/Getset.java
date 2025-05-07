@@ -31,7 +31,7 @@
 //    }
 //
 //
-////  do ka kam check krna do obj same ya ni and true false return krna - equal, hashcode both
+////  do ka kam check krna do obj same ya ni and true false return krna - equal, hashcode
 //    @Override
 //    public boolean equals(Object o) {
 //        if (this == o) return true;

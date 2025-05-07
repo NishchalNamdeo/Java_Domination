@@ -33,7 +33,7 @@ public class Getset {
     }
 
 
-//  do ka kam check krna do obj same ya ni and true false return krna - equal, hashcode
+//  do ka kam check krna do obj same ya ni and true false return krna - equal, hashcode both
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;

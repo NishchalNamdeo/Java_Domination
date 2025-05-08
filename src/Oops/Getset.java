@@ -4,9 +4,9 @@
 //import java.util.Objects;
 //
 //public class Getset {
-//    private  String name;
-//    private  int rollno;
-//    private  String CollgName;
+//      String name;
+//      int rollno;
+//      String CollgName;
 //
 //    public void setName(String name) {
 //        this.name = name;

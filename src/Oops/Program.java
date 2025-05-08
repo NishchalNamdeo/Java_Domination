@@ -7,6 +7,5 @@
 //        System.out.println(s);
 //        s.setName("lovely");
 //        System.out.println(s);
-//
 //    }
 //}

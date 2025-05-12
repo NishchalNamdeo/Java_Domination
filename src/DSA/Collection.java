@@ -159,3 +159,73 @@ import java.util.*;
 //        return ch.size() == 26;
 //    }
 //}
+
+
+//convert decimal to binary
+//public class Collection {
+//    public static void main(String[] args) {
+//        int n = 36;
+//        StringBuilder sb = new StringBuilder();
+//        while (n > 0) {
+//            int t = n%2;
+//            sb.append(t);
+//            n = n/2;
+//        }
+//        System.out.println(sb.reverse());
+//    }
+//}
+
+
+
+//convert binary to decimal - not giving right ans
+//public class Collection {
+//    public static void main(String[] args) {
+//        String bin = "100100";
+//        int ans = 0;
+//        int i = 1;
+//        while(i <= bin.length()){
+//            if(bin.charAt(i-1) == '1'){
+//                ans += (int) Math.pow(2, bin.length()-1);
+//            }
+//            i++;
+//        }
+//        System.out.println(ans);
+//    }
+//}
+
+
+//convert decimal to binary - by input format
+//class Solution {
+//    public String decimalToBinary(int n) {
+//        if(n< 0){
+//            return  "invalid number";
+//        }
+//        if(n == 0){
+//            return  "0";
+//        }
+//        StringBuilder binary = new StringBuilder();
+//        while (n < 0){
+//            binary.append(n%2);
+//            n = n/2;
+//        }
+//        return binary.reverse().toString();
+//    }
+//}
+
+
+//convert binary to decimal
+//class Solution {
+//    public String binaryToDecimal(String binaryNum) {
+//        if(binaryNum == null || binaryNum.isEmpty() ){
+//            return "invalid input";
+//        }
+//
+//        for(char ch : binaryNum.toCharArray()){
+//            if(c != '0' && c != '1'){
+//                return "invaild input";
+//            }
+//        }
+//        int decimal = Integer.parseInt(binaryNum, 2);
+//        return String.valueOf(decimal);
+//    }
+//}

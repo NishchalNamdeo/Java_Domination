@@ -23,7 +23,7 @@ import java.util.List;
 //    }
 //}
 
-//Second tarika --->
+// Ques -> Second tarika --->
 //public class Maths {
 //    public static void main(String[] agrs){
 //       int n = 100;
@@ -45,7 +45,7 @@ import java.util.List;
 //}
 
 
-//check number is prime
+//Ques -> check number is prime
 //public class Maths {
 //    public static boolean isPrime(int n){
 //        if(n <= 1)
@@ -72,7 +72,7 @@ import java.util.List;
 
 
 
-//math level - 2 --> sieve algor
+//Ques -> math level - 2 --> sieve algor
 //public class Maths {
 //    public static void main(String[] agrs) {
 //        int n = 100;
@@ -92,5 +92,51 @@ import java.util.List;
 //                System.out.print(i + " ");
 //        }
 //
+//    }
+//}
+
+
+
+//Ques -> k-th factor of n
+//public class Maths {
+//    public int kthFactor(int n, int k)  {
+//        for (int i = 1; i <=n ; i++) {
+//        if(n % i == 0)
+//            return k--;
+//        if (k == 0)
+//            return i;
+//        }
+//        return -1;
+//    }
+//}
+
+
+//ques -> sqrt niklan without using sqrt
+//public class Maths {
+//    public int kthFactor(int x) {
+//        int ans = 0;
+//        for (int i = 1; i <= x/i; i++)
+//            ans = i;
+//        return ans;
+//    }
+//}
+
+//Pow (x,n)
+//class Solution {
+//    public double recPow(double x, int n) {
+//        if(n == 0) return 1;
+//        if(n == 1) return x;
+//        double r = recPow(x, n/2);
+//        return (n%2 == 0) ? r * r : r * r * x;
+//
+//    }
+//    public double myPow(double x, int n) {
+//        boolean isNeg = false;
+//        if(n < 0){
+//            isNeg = true;
+//            n *= -1;
+//        }
+//        double ans = recPow(x, n);
+//        return isNeg ? 1 / ans : ans;
 //    }
 //}

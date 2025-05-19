@@ -121,7 +121,7 @@ import java.util.List;
 //    }
 //}
 
-//Pow (x,n)
+//Ques - > Pow (x,n)
 //class Solution {
 //    public double recPow(double x, int n) {
 //        if(n == 0) return 1;
@@ -138,5 +138,30 @@ import java.util.List;
 //        }
 //        double ans = recPow(x, n);
 //        return isNeg ? 1 / ans : ans;
+//    }
+//}
+
+
+//power of p and n
+//        double result = 1.0;
+//        int exp = Math.abs(p);
+//        for (int i = 1; i <= exp; i++) {
+//              result *= n;
+//        }
+//        if (p < 0) {
+//            result = 1.0 / result;
+//        }
+//           return result;
+
+
+
+//check  Power of Two
+//class Solution {
+//    public boolean isPowerOfTwo(int n) {
+//       if(n == 1)
+//           return true;
+//       if(n == 0 || n%2 != 0)
+//           return false;
+//       return  isPowerOfTwo(n/2);
 //    }
 //}

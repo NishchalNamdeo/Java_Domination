@@ -92,3 +92,67 @@ import java.util.Arrays;
 //        System.out.println(Arrays.toString(merged));
 //    }
 //}
+
+
+
+// Ques -> Duplicate zeros
+//class List {
+//    public void duplicateZeros(int[] arr) {
+//
+//        int n = arr.length;
+//        int[] res = new int[n];
+//        int j = 0;
+//
+//        for (int i = 0; i <n && j<n ; i++) {
+//            if(arr[i] == 0){
+//                res[j++] = 0;
+//                if(j<n) res[j++] = 0;
+//            }
+//            else{
+//                res[j++] = arr[i];
+//            }
+//        }
+//
+//        for (int i = 0; i < n; i++) arr[i] = res[i];
+//
+//    }
+//}
+
+
+//Ques -> Best Time to Buy and Sell Stock
+//class List {
+//    public int maxProfit(int[] prices) {
+//        int min = prices[0], ans = 0;
+//        for(int price : prices){
+//            ans = Math.max(ans, price-min);
+//            min = Math.min(min, price);
+//        }
+//        return ans;
+//    }
+//}
+
+
+//Ques -> Sort Colors
+//class List {
+//    public void sortColors(int[] nums) {
+//        int s = 0 , m = 0 , e = nums.length-1;
+//
+//        while(m <= e){
+//            if(nums[m] == 0){
+//                swap(nums, s++, m++);
+//            }
+//           else if(nums[m] == 2){
+//               swap(nums, m, e--);
+//            }
+//           else {
+//                m++;
+//            }
+//        }
+//    }
+//
+//    public void swap(int[] nums, int i, int j){
+//        int temp = nums[i];
+//        nums[i] = nums[j];
+//        nums[j] = temp;
+//    }
+//}

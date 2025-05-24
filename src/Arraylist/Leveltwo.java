@@ -1,5 +1,4 @@
 package Arraylist;
-import java.util.Arrays;
 
 //Ques -> reverse array k time
 //  public class List {

@@ -95,6 +95,30 @@ import java.util.Arrays;
 
 
 
+// ---> Another MEthod Merge sorted array
+//class List {
+//    public void mergeSortedArrays(int arr1[],int m, int arr2[], int n) {
+//
+//        int i = m - 1;           // Pointer for last valid element in arr1
+//        int j = n - 1;           // Pointer for last element in arr2
+//        int k = m + n - 1;       // Pointer for last position in arr1
+//
+//        while (i >= 0 && j >= 0) {
+//            if (arr1[i] > arr2[j]) {
+//                arr1[k--] = arr1[i--];
+//            } else {
+//                arr1[k--] = arr2[j--];
+//            }
+//        }
+//
+//        // If any elements left in arr2
+//        while (j >= 0) {
+//            arr1[k--] = arr2[j--];
+//        }
+//
+//    }
+//}
+
 // Ques -> Duplicate zeros
 //class List {
 //    public void duplicateZeros(int[] arr) {
@@ -136,7 +160,6 @@ import java.util.Arrays;
 //class List {
 //    public void sortColors(int[] nums) {
 //        int s = 0 , m = 0 , e = nums.length-1;
-//
 //        while(m <= e){
 //            if(nums[m] == 0){
 //                swap(nums, s++, m++);

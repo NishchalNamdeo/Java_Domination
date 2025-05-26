@@ -52,3 +52,22 @@ package Arraylist;
 //        return maxSum;
 //    }
 //}
+
+
+//Ques4. -> Majority Element
+//public class Levelthree {
+//    public int majorityElement(int[] nums) {
+//        int ans = nums[0] , c=0;
+//        for(int i=1; i<nums.length; i++){
+//            if(nums[0] == ans)c++;
+//            else c--;
+//            if(c==0){
+//                ans = nums[i];
+//                c=1;
+//            }
+//        }
+//        return ans ;
+//    }
+//}
+
+

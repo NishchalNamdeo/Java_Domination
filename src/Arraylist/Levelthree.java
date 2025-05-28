@@ -1,4 +1,5 @@
 package Arraylist;
+import java.awt.*;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -148,5 +149,28 @@ import java.util.List;
 //            water += Math.max(maxL, height[i]);
 //        }
 //        return water;
+//    }
+//}
+
+
+//Ques8. -> Container With Most Water
+//public class Levelthree {
+//    public int maxArea(int[] height){
+//        int n = height.length;
+//        int i = 0, j = n-1;
+//        int maxArea = 0;
+//
+//        while(i<j){
+//            int area = (j-1) * Math.min(height[i], height[j]);
+//            maxArea = Math.max(maxArea, area);
+//
+//            if(height[i] < height[j]){
+//                i++;
+//            }
+//            else{
+//                j--;
+//            }
+//        }
+//        return maxArea;
 //    }
 //}

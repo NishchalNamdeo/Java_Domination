@@ -134,8 +134,7 @@ import java.util.List;
 //    public int trap(int[] height) {
 //        int maxR[] = new int[height.length];
 //        int max = height[height.length - 1];
-//        maxR[maxR.length - 1] = height[height.length - 1];
-//
+//        maxR[maxR.length - 1] = height[height.length - 1]
 //        for (int i = maxR.length - 2; i >= 0; i--) {
 //            maxR[i] = max;
 //            max = Math.min(height[i], max);

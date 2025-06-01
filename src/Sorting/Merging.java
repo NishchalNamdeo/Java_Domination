@@ -1,12 +1,10 @@
 package Sorting;
 import java.util.Arrays;
 
-//Ques1. -> marge two sorted array ---> [part 1]
+//Ques1. -> merge two sorted array ---> [part 1]
 
 
-import java.util.Arrays;
-
-//public class Marging {
+//public class Merging {
 //    private static void merge1 (int[] arr, int left, int mid, int right){
 //        int n = mid - left + 1;
 //        int m = right - mid;
@@ -97,5 +95,51 @@ import java.util.Arrays;
 //        mergeSort(arr, 0, arr.length-1);
 //        System.out.println(Arrays.toString(arr));
 //    }
+//
+//}
+
+
+
+//Ques2. -> Given an array of integers, implement the Merge Sort algorithm
+//          to sort the array in ascending order.
+
+//public class Merging{
+//    public  void mergeSort (int[] arr, int low, int high){
+//        if(low < high){
+//            int mid = low + (high - low)/2;
+//            mergeSort(arr, low, mid);
+//            mergeSort(arr, mid+1, high);
+//
+//            merge(arr, low, mid, high);
+//        }
+//    }
+//    private void merge(int[] arr, int low, int mid, int high){
+//        int[] temp = new int [high- low+1];
+//        int i = low;
+//        int j = mid +1;
+//        int k =0;
+//
+//        while (i<= mid && j<=high){
+//            if(arr[i] < arr[i]){
+//                temp [k++] = arr[i++];
+//            }else{
+//                temp[k++] = arr[j++];
+//            }
+//        }
+//        while (i<=mid) temp[k++] = arr[i++];
+//        while (j<=high) temp[k++] = arr[j++];
+//
+//        for(int x = 0; x<temp.length; x++){
+//            arr[low +x] = temp[x];
+//        }
+//    }
+//
+//    public static void main(String[] args) {
+//        Merging s = new Merging();
+//        int[] arr = {5, 2, 9, 1, 5, 6};
+//        s.mergeSort(arr, 0, arr.length - 1);
+//        System.out.println("Sorted Array: " + Arrays.toString(arr));
+//    }
+//
 //
 //}

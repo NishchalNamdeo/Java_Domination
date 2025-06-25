@@ -1,6 +1,6 @@
-package Binarysearch;
+//package Binarysearch;
 
-
+//Ques1 -> book allocation
 //public class Level3 {
 //    private static int minimize(int[] arr, int m){
 //        if(m>arr.length){
@@ -49,7 +49,7 @@ package Binarysearch;
 //}
 
 
-//Ques1 -> Capacity To Ship Packages Within D Days
+//Ques2 -> Capacity To Ship Packages Within D Days
 //public class Level3 {
 //    public int shipWithinDays(int[] weights, int days){
 //        int max = 0, sum = 0;
@@ -84,7 +84,32 @@ package Binarysearch;
 //}
 
 
-//Ques 2. ->  Koko Eating Bananas
-public class Level3 {
-
-}
+//Ques 3. ->  Koko Eating Bananas
+//public class Level3 {
+//    public int minEatingSpeed(int[] piles, int h){
+//        int low = 1, high = getMax(piles);
+//
+//        while(low < high){
+//            int mid = (low + high)/2;
+//            if(canEatAll(piles, h , mid)){
+//                high = mid;
+//            }else
+//                low = mid + 1;
+//        }
+//        return low;
+//    }
+//    private boolean canEatAll(int[] piles, int h, int speed){
+//        int time = 0;
+//        for(int pile : piles){
+//            time += (pile + speed - 1)/ speed;
+//        }
+//        return  time <= h;
+//    }
+//
+//    private int getMax(int[] piles) {
+//        int max = 0;
+//        for (int p : piles)
+//            max = Math.max(max, p);
+//        return max;
+//    }
+//}

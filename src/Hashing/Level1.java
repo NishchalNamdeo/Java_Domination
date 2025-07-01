@@ -66,3 +66,9 @@ import java.util.Map;
 //}
 
 
+//ques 4. -> Longest Consecutive Sequence
+public class Level1{
+    public int longestConsecutive(int[] nums){
+
+    }
+}

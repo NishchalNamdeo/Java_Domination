@@ -3,6 +3,7 @@ package Hashing;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Map;
+import java.util.Set;
 
 //ques 1. -> Longest Palindrome
 //public class Level1 {
@@ -55,7 +56,7 @@ import java.util.Map;
 //            sum += nums[i];
 //            int diff = sum - k;
 //            if(map.containsKey(diff))
-//                nos += map.get(diff);
+//                nos += map.get(diff); 
 //            if(map.containsKey(sum))
 //                map.put(sum, map.get(sum) + 1);
 //            else
@@ -67,8 +68,25 @@ import java.util.Map;
 
 
 //ques 4. -> Longest Consecutive Sequence
-public class Level1{
-    public int longestConsecutive(int[] nums){
-
-    }
-}
+//public class Level1{
+//    public int longestConsecutive(int[] nums){
+//        Set<Integer> set = new HashSet<>();
+//        for(int num : nums){
+//            set.add(num);
+//        }
+//        int longest = 0;
+//        for(int num :set){
+//            if(!set.contains(num-1)){
+//                int currentNum = num;
+//                int currentStreak = 1;
+//
+//                while(set.contains(currentNum + 1)){
+//                    currentNum++;
+//                    currentStreak++;
+//                }
+//                longest = Math.max(longest, currentStreak);
+//            }
+//        }
+//        return longest;
+//    }
+//}

@@ -79,4 +79,57 @@ import java.util.Set;
 //}
 
 
-//Ques 3. ->
+//Ques 3. ->Rotate Image
+//public class level1{
+//    public void rotate(int[][] matrix){
+//        int m = matrix.length;
+//        int n = matrix[0].length;
+//        int ans[][] = new int [n][m];
+//        for (int i = 0; i <m ; i++) {
+//            for (int j = 0; j < n; j++) {
+//                ans[j][m-1-i] = matrix[j][i];
+//            }
+//        }
+//        for (int i = 0; i < n; i++) {
+//            matrix[i] = ans[i];
+//        }
+//    }
+//}
+
+
+//ques 4. -> Search a 2D Matrix
+//public class level1{
+//    public int probableRow(int[][] matrix, int target){
+//        int start = 0, end = matrix.length -1;
+//        while (start <= end){
+//            int mid = (start+end)/2;
+//            if(target >= matrix[mid][0] && target <= matrix[mid][matrix[0].length-1])
+//                return mid;
+//            else if(target > matrix[mid][0])
+//                start = mid +1;
+//            else
+//                end = mid -1;
+//        }
+//        return -1;
+//    }
+//    public boolean bs(int arr[], int target){
+//        int start = 0, end = arr.length-1;
+//        while (start<= end){
+//            int mid = (start+end)/2;
+//            if(target == arr[mid])
+//                return true;
+//            else if(target>arr[mid])
+//                start = mid + 1;
+//            else
+//                end = mid -1;
+//        }
+//        return false;
+//    }
+//    public boolean searchMatrix(int[][] matrix, int target){
+//        int row = probableRow(matrix, target);
+//            if(row == -1) return false;
+//            return bs(matrix[row],target);
+//    }
+//}
+
+

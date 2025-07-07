@@ -1,4 +1,4 @@
-package Stringbuilder;
+//package Stringbuilder;
 
 //matrix / 2D Array
 
@@ -132,4 +132,50 @@ import java.util.Set;
 //    }
 //}
 
+
+//Ques 5. -> Set Matrix Zeroes
+//public class level1{
+//    public void setZeroes(int[][] matrix){
+//        int m = matrix.length, n = matrix[0].length;
+//        boolean rowZero = false, rowCol = false;
+//
+//        for (int j = 0; j < m; j++) {
+//            if(matrix[0][j] == 0){
+//                rowZero = true;
+//                break;
+//            }
+//        }
+//        for (int i = 0; i < n; i++) {
+//            if (matrix[i][0] == 0){
+//                rowCol = true;
+//                break;
+//            }
+//        }
+//        for (int i = 1; i < m; i++) {
+//            for (int j = 1; j <n ; j++) {
+//                if(matrix[i][j] == 0){
+//                    matrix[i][0] = 0;
+//                    matrix[0][j] = 0;
+//                }
+//            }
+//        }
+//        for (int i = 1; i < m; i++) {
+//            for (int j = 1; j < n; j++) {
+//                if(matrix[i][0] ==0 || matrix[0][j] == 0){
+//                    matrix[i][j] =0;
+//                }
+//            }
+//        }
+//        if (rowZero){
+//            for (int j = 0; j < n; j++) {
+//                matrix[0][j] = 0;
+//            }
+//        }
+//        if (rowCol){
+//            for (int i = 0; i < m; i++) {
+//                matrix[i][0] = 0;
+//            }
+//        }
+//    }
+//}
 

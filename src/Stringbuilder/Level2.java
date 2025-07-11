@@ -21,8 +21,8 @@ package Stringbuilder;
 
 
 //Ques 2. -> Add Binary
-public class Level2{
-    public String addBinary(String a, String b) {
-
-    }
-}
+//public class Level2{
+//    public String addBinary(String a, String b) {
+//
+//    }
+//}

@@ -1,3 +1,4 @@
+package Linkedlist;
 //package Linkedlist;
 //
 //public class demo {
@@ -21,3 +22,24 @@
 //    }
 //
 //}
+
+
+import java.util.LinkedList;
+
+// -> example 2 question
+public class demo{
+    public static void main(String[] args){
+        MyLinkedList list = new MyLinkedList();
+//        LinkedList<Integer> list = new LinkedList<>();
+        list.add(89);
+        list.add(45);
+        list.add(23);
+        System.out.println(list);
+        list.addFirst(76);
+        System.out.println(list);
+        list.add(2,100);
+        System.out.println(list);
+    }
+
+
+}

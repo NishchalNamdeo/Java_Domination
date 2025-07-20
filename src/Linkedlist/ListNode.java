@@ -1,4 +1,5 @@
-package Linkedlist;//package Linkedlist;
+
+//package Linkedlist;
 
 
 //  -> example one question
@@ -14,11 +15,11 @@ package Linkedlist;//package Linkedlist;
 
 
 // -> example 2 question
-public class ListNode {
-    int val ;
-    ListNode next;
-
-    public ListNode(int data){
-        this.val = data;
-    }
-}
+//public class ListNode {
+//    int val ;
+//    ListNode next;
+//
+//    public ListNode(int data){
+//        this.val = data;
+//    }
+//}

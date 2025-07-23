@@ -1,8 +1,8 @@
 package Linkedlist;
 
 //Level 1
-//Ques -> 707. Design Linked List
 
+//Ques -> 707. Design Linked List
 /* class NodeList {
     NodeList next;
     int val = 0;
@@ -80,3 +80,20 @@ class MyLinkedList {
     }
 }
 */
+
+//Ques 2. -> Middle of the Linked List
+/* class NodeList{
+    public NodeList next;
+    public NodeList middleNode(NodeList head){
+        NodeList slow = head, fast= head;
+        while(fast != null && fast.next != null){
+            slow = slow.next;
+            fast = fast.next.next;
+        }
+        return  slow;
+    }
+}
+*/
+
+
+Ques 3. ->

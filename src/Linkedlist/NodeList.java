@@ -96,4 +96,26 @@ class MyLinkedList {
 */
 
 
-Ques 3. ->
+//Ques 3. -> Merge Two Sorted Lists
+/* class NodeList{
+    private NodeList next;
+
+    public NodeList mergeTwoLists(NodeList list1, NodeList list2){
+        NodeList ans = new NodeList(-1);
+        NodeList temp = ans;
+        while(list1 != null && list2 != null){
+            if(list1.val <= list2.val){
+                temp.next = list1;
+                list1 = list1.next;
+            }
+            else{
+                temp.next = list2;
+                list2.next = list2;
+            }
+        }
+        temp.next = list1 != null ? list1:list2;
+        return ans.next;
+
+    }
+}
+*/

@@ -30,7 +30,7 @@ import java.util.LinkedList;
 //public class demo{
 //    public static void main(String[] args){
 //        MyLinkedList list = new MyLinkedList();
-////        LinkedList<Integer> list = new LinkedList<>();
+//       LinkedList<Integer> list = new LinkedList<>();
 //        list.add(89);
 //        list.add(45);
 //        list.add(23);

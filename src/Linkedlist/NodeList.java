@@ -119,3 +119,26 @@ class MyLinkedList {
     }
 }
 */
+
+
+import java.util.HashSet;
+import java.util.Set;
+
+//Ques 4 -  Linked List Cycle
+/* class NodeList{
+    public boolean hasCycle(ListNode head){
+        Set<ListNode> visited = new HashSet<>;
+        while(head != null){
+            if(visited.contains(head)){
+                return  true;
+            }
+            visited.add(head);
+            head = head.next;
+        }
+        return false;
+    }
+}
+*/
+
+
+//Ques 5

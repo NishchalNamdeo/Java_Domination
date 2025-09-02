@@ -112,10 +112,10 @@ class MyLinkedList {
                 temp.next = list2;
                 list2.next = list2;
             }
+            temp = temp.next;
         }
         temp.next = list1 != null ? list1:list2;
         return ans.next;
-
     }
 }
 */
@@ -141,4 +141,70 @@ import java.util.Set;
 */
 
 
-//Ques 5
+//Level - 2
+
+//Ques 5 Reverse Linked List
+/* class NodeList{
+public ListNode reverseList(ListNode head) {
+    ListNode prev = null;
+    while(head != null){
+      ListNode temp = head.next;
+      head.next = prev;
+      prev = head;
+      head = temp;
+    }
+    return prev;
+}*/
+
+
+//Ques 6  Remove Duplicates from Sorted List - 83 (recursive)
+/* class NodeList{
+    public ListNode deleteDuplicates(ListNode head){
+        if(head == null || head.next == null){
+            return  head;
+        }
+        ListNode ans = deleteDuplicates(head.next);
+        if(ans.val == head.val){
+            return  ans;
+        }
+        else{
+            head.next = ans;
+            return  head;
+        }
+    }
+} */
+
+
+//Ques 7  Add Two Numbers
+/* class NodeList{
+    public ListNode addTwoNumbers(ListNode h1, ListNode h2) {
+        ListNode ans = new ListNode(-1); // dummy head
+        ListNode temp = ans;
+        int carry = 0;
+
+        while (h1 != null || h2 != null) {
+            int sum = carry;
+
+            if (h1 != null) {
+                sum += h1.val;
+                h1 = h1.next;
+            }
+            if (h2 != null) {
+                sum += h2.val;
+                h2 = h2.next;
+            }
+
+            carry = sum / 10;
+            temp.next = new ListNode(sum % 10);
+            temp = temp.next;
+        }
+
+        if (carry > 0) {
+            temp.next = new ListNode(carry);
+        }
+
+        return ans.next;
+    }
+}*/
+
+//Level - 3

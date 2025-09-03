@@ -207,4 +207,45 @@ public ListNode reverseList(ListNode head) {
     }
 }*/
 
+
+
 //Level - 3
+
+//Ques 8 Reverse Nodes in k-Group - 25
+/* class NodeList{
+    private void rev(ListNode start, ListNode end){
+        ListNode cur = start;
+        ListNode prev = null;
+        while(prev == null){
+            ListNode temp = cur.next;
+            cur.next = prev;
+            prev = cur;
+            cur = temp;
+        }
+    }
+
+    public ListNode reverseKGroup(ListNode head, int k){
+        if(head == null || head.next == null || k== 1){
+            return  head;
+        }
+        ListNode start = head, end=head;
+        ListNode i = k-1;
+        while(i-- != 0){
+            end = end.next;
+            if(end == null){
+                return  head;
+            }
+        }
+        ListNode temp = reverseKGroup(end.next, k);
+        rev(star, end);
+        start.next = temp;
+        return  end;
+    }
+}*/
+
+//Ques 7 Copy List with Random Pointer - 138
+//class NodeList{
+//        public Node copyRandomList(Node head) {
+//
+//        }
+//}

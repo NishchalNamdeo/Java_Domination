@@ -50,7 +50,7 @@ package Queue;
 
 
 //in circuler array way -->
-public class Qusingarray {
+/* public class Qusingarray {
     private int data[];
     private int rare, front, size, capacity;
 
@@ -110,4 +110,6 @@ public class Qusingarray {
         sb.append("]");
         return sb.toString();
     }
-}
+} */
+
+

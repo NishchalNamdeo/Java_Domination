@@ -50,6 +50,7 @@ package Queue;
 
 
 //in circuler array way -->
+
 /* public class Qusingarray {
     private int data[];
     private int rare, front, size, capacity;
@@ -113,3 +114,63 @@ package Queue;
 } */
 
 
+//Queue with LinkedList -->
+/* public class Qusingarray {
+
+    private static class ListNode {
+        int val;
+        ListNode next;
+
+        ListNode(int val) {
+            this.val = val;
+            this.next = null;
+        }
+    }
+    private ListNode head, tail;
+
+    public Qusingarray() {
+        head = tail = null;
+    }
+
+    public void offer(int val) {
+        ListNode node = new ListNode(val);
+        if (tail == null) {
+            head = tail = node;
+            return;
+        }
+        tail.next = node;
+        tail = node;
+    }
+
+    public Integer poll() {
+        if (head == null) {
+            return null;
+        }
+        int val = head.val;
+        head = head.next;
+        if (head == null)
+            tail = null;
+        return val;
+    }
+
+    public Integer peek() {
+        if (head == null)
+            return null;
+        return head.val;
+    }
+
+    public String toString() {
+        StringBuilder sb = new StringBuilder();
+        sb.append("[ ");
+        ListNode temp = head;
+        while (temp != null) {
+            sb.append(temp.val);
+            if (temp.next != null) {
+                sb.append(", ");
+            }
+            temp = temp.next;
+        }
+        sb.append("] ");
+        return sb.toString();
+    }
+} */

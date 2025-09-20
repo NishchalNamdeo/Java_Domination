@@ -87,6 +87,7 @@ import java.util.Stack;
         var t = q1;
         q1= q2;
         q2 = t;
+        return ans;
     }
 
     public  int top(){
@@ -98,11 +99,11 @@ import java.util.Stack;
      var t = q1;
      q1 = q2;
      q2 = t;
+     return ans;
     }
 
     public boolean empty(){
         return q1.isEmpty();
     }
-}
- */
+}*/
 

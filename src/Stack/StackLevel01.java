@@ -107,3 +107,34 @@ import java.util.Stack;
     }
 }*/
 
+// ques -> Implement Stack using Queues - [null, null, null, 5, 3]
+/* class StackLevel01{
+    private Queue<Integer> q;
+
+    public StackLevel01(){
+        q = new LinkedList<>();
+    }
+
+    public void push(int x){
+        q.offer(x);
+        int size = q.size();
+        for(int i=0; i<size-1; i++){
+            q.offer(q.poll());
+        }
+    }
+
+    public Integer pop(){
+        if(q.isEmpty()) return  null;
+        return q.poll();
+    }
+
+    public Integer top(){
+        if(q.isEmpty()) return  null;
+        return q.peek();
+    }
+
+    public boolean empty(){
+        return q.isEmpty();
+    }
+} */
+
